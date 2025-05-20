@@ -9,9 +9,30 @@
     <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <div class="header">
-      <load src="./header.html" icon-path="../img/sprite.svg#logo" />
-    </div>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="/index.html" class="logo">
+          <img
+            class="img-logo"
+            src="../favicons/apple-touch-icon.png"
+            alt="logo"
+          />
+          <span class="logo-text">AppGames</span>
+        </a>
+        <nav class="header-container-nav">
+          <ul class="header-navigation">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="/index.html">Home</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="./privacy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="container details-page">
       <section class="game-details">
@@ -80,6 +101,6 @@
       </section>
     </main>
 
-    <script src="./main.js" type="module"></script>
+    <!-- <script src="./main.js" type="module"></script> -->
   </body>
 </html>
