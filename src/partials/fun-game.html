@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>AppGames</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../favicons/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="/index.html" class="logo">
+          <img
+            class="img-logo"
+            src="../favicons/apple-touch-icon.png"
+            alt="logo"
+          />
+          <span class="logo-text">AppGames</span>
+        </a>
+        <nav class="header-container-nav">
+          <ul class="header-navigation">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="/index.html">Home</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="./privacy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="game-title">🎯 Catch the Item Game</h1>
+      <p class="instructions">
+        Press "Start game" to begin. Click on the items to earn points!
+      </p>
+
+      <div class="scoreboard">
+        <span>Score: </span><span class="score">0</span>
+      </div>
+
+      <div class="game-area">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+
+      <button class="start-btn">Start Game</button>
+      <p class="result"></p>
+    </main>
+
+    <script type="module" src="../js/fun-game.js"></script>
+  </body>
+</html>

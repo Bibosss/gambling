@@ -1,0 +1,42 @@
+.features {
+  padding: 64px 0;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.features-title {
+  font-size: clamp(20px, 4vw, 32px);
+  margin-bottom: 32px;
+}
+
+.features-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.feature-card {
+  background: #333;
+  width: clamp(200px, 25vw, 280px);
+  padding: 24px 2vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 127, 80, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card h3 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.feature-card p {
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.4;
+}

@@ -1,17 +1,21 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+  <div class="container header-inner">
+    <a href="/index.html" class="logo">
+      <img class="img-logo" src="../favicons/apple-touch-icon.png" alt="logo" />
+      <span class="logo-text">AppGames</span>
+    </a>
+    <nav class="header-container-nav">
+      <ul class="header-navigation">
+        <li class="header-navigation-item">
+          <a class="header-navigation-link" href="/index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-navigation-item">
+          <a class="header-navigation-link" href="#game">Games</a>
+        </li>
+        <li class="header-navigation-item">
+          <a class="header-navigation-link" href="../partials/privacy.html"
+            >Privacy Policy</a
+          >
         </li>
       </ul>
     </nav>
