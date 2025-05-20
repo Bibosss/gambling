@@ -1,0 +1,215 @@
+.details-page {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #f9fdfb;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.details-page h1,
+.details-page h2,
+.details-page p {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.details-page h1 {
+  font-size: clamp(24px, 6vw, 44px);
+  margin-bottom: 24px;
+  color: #1b262c;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 2px 4px rgba(27, 38, 44, 0.1);
+}
+
+.details-page h2 {
+  font-size: clamp(20px, 4.5vw, 35px);
+  margin-bottom: 20px;
+  color: #0f4c75;
+  border-bottom: 3px solid #3282b8;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.details-game-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 24px auto 48px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(50, 130, 184, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.details-game-image:hover {
+  transform: scale(1.03);
+}
+
+.details-page p {
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3a4750;
+  text-align: justify;
+}
+
+.stardew-description {
+  margin-top: 56px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.image-frame {
+  flex: 1 1 160px;
+  max-width: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(50, 130, 184, 0.25),
+    inset 0 0 8px rgba(255, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  background: linear-gradient(135deg, #a7c7e7, #def3fb);
+}
+
+.image-frame:hover {
+  box-shadow: 0 12px 30px rgba(50, 130, 184, 0.5),
+    inset 0 0 15px rgba(255, 255, 255, 0.7);
+  transform: scale(1.08);
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.details-back-btn {
+  display: block;
+  width: 220px;
+  margin: 64px auto 32px;
+  padding: 14px 29px;
+  background: linear-gradient(135deg, #3282b8, #0f4c75);
+  color: #f0f9ff;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(15, 76, 117, 0.6),
+    0 0 12px rgba(50, 130, 184, 0.9);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+}
+
+.details-back-btn:hover,
+.details-back-btn:focus {
+  background: linear-gradient(135deg, #1c3d5a, #06618c);
+  box-shadow: 0 12px 30px rgba(6, 97, 140, 0.9), 0 0 18px rgba(50, 130, 184, 1);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .details-page {
+    margin: 32px 16px;
+    padding: 0 16px;
+  }
+
+  .image-gallery {
+    gap: 12px;
+  }
+
+  .image-frame {
+    max-width: 140px;
+  }
+
+  .details-back-btn {
+    width: 180px;
+    font-size: 16px;
+    margin: 48px auto 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .details-page {
+    margin: 20px 10px;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+
+  .details-page h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    text-shadow: none;
+  }
+
+  .details-page h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    border-bottom-width: 2px;
+    padding-bottom: 6px;
+  }
+
+  .details-game-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(50, 130, 184, 0.2);
+  }
+
+  .details-page p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .stardew-description {
+    margin-top: 30px;
+  }
+
+  .image-gallery {
+    margin-top: 30px;
+    gap: 8px;
+  }
+
+  .image-frame {
+    flex: 1 1 100px;
+    max-width: 100px;
+    border-radius: 10px;
+  }
+
+  .details-back-btn {
+    width: 160px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 40px auto 20px;
+    border-radius: 30px;
+  }
+}
